@@ -35,6 +35,9 @@ public class DetailActivity extends AppCompatActivity {
         JSON = "https://www.thesportsdb.com/api/v1/json/2/search_all_leagues.php?c=";
         String pais ="";
         pais = getIntent().getStringExtra("pais");
+        if (pais.equals("USA")){
+            pais = "United%20States";
+        }
         JSON = JSON +pais + "&s=Soccer";
         getComp();
     }
