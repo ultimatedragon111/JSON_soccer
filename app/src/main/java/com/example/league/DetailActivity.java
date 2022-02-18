@@ -25,7 +25,7 @@ public class DetailActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     ArrayList<Competition> competitions = new ArrayList<>();
     CompAdapter compAdapter;
-    static  String JSON = "https://www.thecompetitionsdb.com/api/v1/json/2/search_all_leagues.php?c=";
+   static  String JSON;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
